@@ -1,0 +1,224 @@
+@font-face{
+    font-family: "Social";
+    src: url(../fonts/Social\ Media\ Circled.woff);
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url(../fonts/Nexa-Heavy.woff);
+}
+
+@font-face {
+    font-family: "Nexa-L";
+    src: url(../fonts/Nexa-ExtraLight.woff);
+}
+
+.nav-fundo{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+html, body, #home{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#home{
+    background: url(../images/capa.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+#redes-sociais{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.capa{
+    text-align: center;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 30%;
+    height: 30%;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.carousel-indicators li{
+    height: 7px;
+    width: 30px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.city{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 75px;
+    background: url(../images/city-white.png) repeat-x;
+    background-size: cover;
+}
+
+.city-b{
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 75px;
+    background: url(../images/city-black.png) repeat-x;
+    background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    margin-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #F9DA03;
+    text-decoration: underline;
+    text-transform: uppercase;
+    transform: 0.1s;
+}
+
+h1{
+    font-family: "Nexa";
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: #F9DA03 7px double;
+}
+
+.caixa{
+    border: 3px solid lightgray;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px black;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.caixa h2{
+    font-family: "Nexa";
+    font-weight: bold;
+    color: black;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.caixa h4{
+    font-family: "Nexa";
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+    font-size: 1.5;
+}
+
+#local h3{
+    color: rgb(77, 77, 77);
+    font-family: "Nexa";
+}
+
+.mapa{
+    border: 3px solid lightgray;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mapa img{
+    width: 100%;
+}
+
+.rotacionar{
+    transform: rotate(351deg);
+}
+
+.redes .nav-link{
+    color: black;
+}
+
+#redes-sociais .nav-link:hover{
+    color: #F9DA03;
+}
+
+
+footer{
+    background-color: #000;
+}
+
+
+
+
+@media (max-width: 575.98px) {
+    .city{
+        height: 55px;
+        bottom: -1px;
+    }
+
+    .city-b{
+        height: 55px;
+        bottom: -1px;
+    }
+
+    .carousel-item img{
+        width: 77%;
+    }
+
+    .caixa{
+        width: 100%;
+        display: block;
+    }
+
+    .caixa img{
+        width: 100%;
+    }
+
+    .mapa{
+        width: 100%;
+    }
+
+    .rotacionar{
+        transform: rotate(90deg);
+    }
+
+    .rotacionar img{
+        width: 80%;
+    }
+
+    .kids{
+        margin-top: -20px;
+    }
+
+    #local h3{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-item img{
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .carousel-item img{
+        width: 40%;
+    }
+
+    .kids .d-flex img{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-item img{
+        width: 40%;
+    }
+}
